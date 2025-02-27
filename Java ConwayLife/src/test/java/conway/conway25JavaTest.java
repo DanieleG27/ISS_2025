@@ -1,5 +1,7 @@
 package conway;
 
+import static org.junit.Assert.assertTrue;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -11,6 +13,7 @@ import conway.devices.ConwayInputMock;
 
 public class conway25JavaTest {
 private static ConwayInputMock cim;
+private Life life;
 
 	@BeforeClass
 	public static void setup() {
@@ -29,8 +32,22 @@ private static ConwayInputMock cim;
 	@Test
 	public void test1() {
 		System.out.println("ok test1");
-		cim.simulateUserControl();
-		//assert ??
+		this.life= new Life(3, 3);
+		
+		life.switchCellState(1, 0);
+		life.switchCellState(1, 1);
+		life.switchCellState(1, 2);
+		
+		life.computeNextGen();
+		
+		Grid newGrid = new Grid(3, 3);
+		newGrid.setCellState(0, 1, 1);
+		newGrid.setCellState(1, 1, 1);
+		newGrid.setCellState(2, 1, 1);
+		
+		assertTrue(life.getCellState(0, 1) == newGrid.getCellState(0, 1));
+		assertTrue(life.getCellState(1, 1) == newGrid.getCellState(1, 1));
+		assertTrue(life.getCellState(1, 1) == newGrid.getCellState(1, 1));
 	}
 	
 	@Test

@@ -23,7 +23,7 @@ public class Life {
         grid.resetGrid();
     }
 
-    protected void computeNextGen(IOutDev outdev) {
+    protected void computeNextGen() {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 int numNeighbors = grid.countNeighborsLive(i, j);

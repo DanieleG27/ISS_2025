@@ -31,7 +31,7 @@ public class LifeController {
 			try {
 				TimeUnit.MILLISECONDS.sleep(generationTime);
 				System.out.println("---------Epoch --- "+i );
-				life.computeNextGen( outdev );
+				life.computeNextGen();
 				//La griglia è visualizzata  'on the fly'
 				displayGrid();
 			} catch (InterruptedException e) {
