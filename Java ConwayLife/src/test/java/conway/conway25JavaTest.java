@@ -3,25 +3,24 @@ package conway;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.After;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import conway.devices.ConwayInputMock;
+//import conway.devices.ConwayInputMock;
 
 //By default, JUnit comes with a bundled copy of hamcrest-core
 
 public class conway25JavaTest {
-private static ConwayInputMock cim;
+//private static ConwayInputMock cim;
 private Life life;
 
 	@BeforeClass
 	public static void setup() {
 		System.out.println("setup");
     	//configureTheSystem
-        Life life           = new Life( 3,3 );
-        LifeController cc   = new LifeController(life);   
-        cim = new ConwayInputMock(cc,life);		
+        //Life life           = new Life( 3,3 );
+        //LifeController cc   = new LifeController(life);   
+        //cim = new ConwayInputMock(cc,life);		
 	}
 	
 	@After
