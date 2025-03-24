@@ -9,3 +9,4 @@ Repository del corso Ingegneria dei Sistemi Software a.a. 2024/2025 - Guiducci D
 * [commdemo](commdemo): microservizio indipendente con esempi di interazione via WS e via MQTT.
 * [conway25JavaMqtt](conway25JavaMqtt): GameLife standalone , implementa la logica del gioco e comunica gli aggiornamenti tramite MQTT
 * [conwayguialone](conwayguialone): GUI separata che usa Paho per ricevere e inviare messaggi MQTT senza dipendere dal servizio applicativo , comunica con [conway25JavaMqtt](conway25JavaMqtt)
+* [Fase1ISS25-GuiducciDaniele.pdf](Fase1ISS25-GuiducciDaniele.pdf): Relazione di progetto che evidenzia gli aspetti significativi della Fase 1.
