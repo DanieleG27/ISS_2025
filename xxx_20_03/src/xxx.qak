@@ -1,0 +1,10 @@
+System xxx 
+
+Context ctxxxx ip [ host="localhost" port=8920 ]
+
+QActor a0 context ctxxxx{
+	
+	State s0 initial {
+		println("Hello world") color magenta
+	}
+}
